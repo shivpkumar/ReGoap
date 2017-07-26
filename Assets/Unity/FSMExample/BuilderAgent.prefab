@@ -38,6 +38,8 @@ GameObject:
   - component: {fileID: 114620706744871252}
   - component: {fileID: 114352658686281958}
   - component: {fileID: 114016718717823168}
+  - component: {fileID: 114224090394071206}
+  - component: {fileID: 114232204474113556}
   m_Layer: 0
   m_Name: BuilderAgent
   m_TagString: Untagged
@@ -230,6 +232,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   priority: 0
+--- !u!114 &114224090394071206
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125005807267310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d390292a629b2f46a8e6b9ce3ca6afc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GenericGoal
+  Priority: 1
+  ErrorDelay: 0.5
+--- !u!114 &114232204474113556
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125005807267310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a81b4c3a48be10641b32c97d6fd1c9ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GoapAction
+  Cost: 1
 --- !u!114 &114338603158517310
 MonoBehaviour:
   m_ObjectHideFlags: 1
