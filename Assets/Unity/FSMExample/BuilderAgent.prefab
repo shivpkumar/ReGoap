@@ -32,9 +32,10 @@ GameObject:
   - component: {fileID: 114339810744227078}
   - component: {fileID: 114133309643165458}
   - component: {fileID: 114771661801520948}
-  - component: {fileID: 114338603158517310}
   - component: {fileID: 114073144445224372}
   - component: {fileID: 114137335938146110}
+  - component: {fileID: 114338603158517310}
+  - component: {fileID: 114621877445628986}
   m_Layer: 0
   m_Name: BuilderAgent
   m_TagString: Untagged
@@ -267,6 +268,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MinPowDistanceToBeNear: 1
+--- !u!114 &114621877445628986
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125005807267310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0e8bdd8d651b846a335dd4b5c81ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: CraftWoodAlternateAction
+  Cost: 1
+  RawRecipe: {fileID: 11400000, guid: 1626dc58b5f466b46acacfbd8139e552, type: 2}
 --- !u!114 &114677860057467728
 MonoBehaviour:
   m_ObjectHideFlags: 1
