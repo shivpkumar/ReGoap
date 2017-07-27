@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114016718717823168}
   - component: {fileID: 114224090394071206}
   - component: {fileID: 114232204474113556}
+  - component: {fileID: 114694051781247892}
   m_Layer: 0
   m_Name: BuilderAgent
   m_TagString: Untagged
@@ -174,6 +175,7 @@ MonoBehaviour:
   BlackListGoalOnFailure: 0
   CalculateNewGoalOnStart: 1
   ValidateActiveAction: 0
+  fleeDistance: 10
 --- !u!114 &114080850121303144
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -243,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d390292a629b2f46a8e6b9ce3ca6afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: GenericGoal
+  Name: WanderGoal
   Priority: 1
   ErrorDelay: 0.5
 --- !u!114 &114232204474113556
@@ -257,8 +259,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a81b4c3a48be10641b32c97d6fd1c9ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: GoapAction
+  Name: WanderAction
   Cost: 1
+  timeToPause: 1
 --- !u!114 &114338603158517310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -364,6 +367,17 @@ MonoBehaviour:
   CheckForStuck: 0
   StuckCheckDelay: 1
   MaxStuckDistance: 0.1
+--- !u!114 &114694051781247892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125005807267310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45872742f7613a1439ba9f0943b92872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114750216515206370
 MonoBehaviour:
   m_ObjectHideFlags: 1
